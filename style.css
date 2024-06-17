@@ -8,47 +8,47 @@ body {
     justify-content: center;
 }
 
-article:nth-child(1) {
+articl.card:nth-child(1) {
     background-color: #F3B3D2;
     z-index: 10;
 }
 
-article:nth-child(2) {
+.card:nth-child(2) {
     background-color: #C777F5;
     z-index: 9;
 }
 
-article:nth-child(3) {
+.card:nth-child(3) {
     background-color: #6A73FA;
     z-index: 8;
 }
 
-article:nth-child(4) {
+.card:nth-child(4) {
     background-color: #5BE5F7;
     z-index: 7;
 }
 
-article:nth-child(5) {
+.card:nth-child(5) {
     background-color: #38CC86;
     z-index: 6;
 }
 
-article:nth-child(6) {
+.card:nth-child(6) {
     background-color: #55FF41;
     z-index: 5;
 }
 
-article:nth-child(7) {
+.card:nth-child(7) {
     background-color: #FAFA30;
     z-index: 4;
 }
 
-article:nth-child(8) {
+.card:nth-child(8) {
     background-color: #FE9319;
     z-index: 3;
 }
 
-article:nth-child(9) {
+.card:nth-child(9) {
     background-color: #FD0909;
     z-index: 2;
 }
@@ -62,19 +62,22 @@ article {
 
 .card:hover {
     transform: rotateZ(-40deg);
-    transition-duration: 2s;
+    transition-duration: 1s;
     transform-origin: center bottom;
     translate: 1rem;
 
     +.card {
         transform: rotateZ(-30deg);
         transition-duration: 1s;
+        transform-origin: center bottom;
         translate: 1rem;
 
         +.card {
             transform: rotateZ(-20deg);
             transition-duration: 1s;
+            transform-origin: center bottom;
             translate: 2rem;
+
             +.card {
                 transform: rotateZ(-10deg);
                 transition-duration: 1s;
